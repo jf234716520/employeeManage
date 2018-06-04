@@ -1,0 +1,106 @@
+.icon-favicon{
+	background:url('myicons/bug.gif') no-repeat center center;
+}
+.icon-blank{
+	background:url('icons/blank.gif') no-repeat center center;
+}
+.icon-add{
+	background:url('icons/edit_add.png') no-repeat center center;
+}
+.icon-edit{
+	background:url('icons/pencil.png') no-repeat center center;
+}
+.icon-remove{
+	background:url('icons/edit_remove.png') no-repeat center center;
+}
+.icon-save{
+	background:url('icons/filesave.png') no-repeat center center;
+}
+.icon-cut{
+	background:url('icons/cut.png') no-repeat center center;
+}
+.icon-ok{
+	background:url('icons/ok.png') no-repeat center center;
+}
+.icon-no{
+	background:url('icons/no.png') no-repeat center center;
+}
+.icon-cancel{
+	background:url('icons/cancel.png') no-repeat center center;
+}
+.icon-reload{
+	background:url('icons/reload.png') no-repeat center center;
+}
+.icon-search{
+	background:url('icons/search.png') no-repeat center center;
+}
+.icon-doc{
+	background:url('icons/doc.png') no-repeat center center;
+}
+.icon-print{
+	background:url('icons/print.png') no-repeat center center;
+}
+.icon-help{
+	background:url('icons/help.png') no-repeat center center;
+}
+.icon-undo{
+	background:url('icons/undo.png') no-repeat center center;
+}
+.icon-redo{
+	background:url('icons/redo.png') no-repeat center center;
+}
+.icon-back{
+	background:url('icons/back.png') no-repeat center center;
+}
+.icon-sum{
+	background:url('icons/sum.png') no-repeat center center;
+}
+.icon-tip{
+	background:url('icons/tip.png') no-repeat center center;
+}
+
+.icon-mini-add{
+	background:url('icons/mini_add.png') no-repeat center center;
+}
+.icon-mini-edit{
+	background:url('icons/mini_edit.png') no-repeat center center;
+}
+.icon-mini-refresh{
+	background:url('icons/mini_refresh.png') no-repeat center center;
+}
+
+/**********************************zidy*************************************/
+
+.myicon-add{
+	background:url('myicons/add.gif') no-repeat center center;
+}
+.myicon-edit{
+	background:url('myicons/edit.gif') no-repeat center center;
+}
+.myicon-remove{
+	background:url('myicons/delete.gif') no-repeat center center;
+}
+.myicon-table{
+	background:url('myicons/table.png') no-repeat center center;
+}
+.myicon-next{
+	background:url('myicons/next.png') no-repeat center center;
+}
+.myicon-back{
+	background:url('myicons/back.png') no-repeat center center;
+}
+.myicon-excel{
+	background:url('myicons/excel.png') no-repeat center center;
+}
+.myicon-tool{
+	background:url('myicons/toolset.gif') no-repeat center center;
+}
+.myicon-exchange{
+	background:url('myicons/btn_exchange.png') no-repeat center center;
+}
+.myicon-exchange_all{
+	background:url('myicons/btn_exchange_all.png') no-repeat center center;
+}
+input{
+	border:1px solid #DDDDDD;
+}

@@ -1,0 +1,590 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul,li,dt,dl,ol,dd{ display:block; margin:0px; padding:0px; list-style:none;}
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;};
+a:hover{text-decoration:underline; color:#FF0000;}
+
+body{
+	width:99%;
+	*width:auto;
+	height:100%;
+	*height:auto;
+	font-size-adjust:none;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:400;
+	font-family: "微软雅黑",sans-serif;
+	margin:0;
+}
+.main{
+	width:auto;
+	height:auto;
+	text-align:left;
+	background-color:white;
+	border: 1px solid #8CB2E3;
+	margin:2px;
+	*padding:1px;
+}
+/*标题*/
+.barTitle{ 
+	*width:100%;
+	height:50px; 
+	border:0 !important; 
+	border-bottom:2px solid #eee !important;
+	text-align: left;
+	position:relative;
+}
+.barTitle .content {
+	font-size:18px;
+	margin:0;
+	height: 50px;
+	line-height: 50px;
+	text-indent: 42px;
+	background: url(../images/formTitle.gif) no-repeat 20px center;
+}
+.barTitle .content span{
+	position: absolute;
+	left:0;
+	height:48px; 
+	color: #111 !important;
+	border-bottom: 4px solid #3fc4b1;
+	padding-right: 26px;
+}
+.title{
+	width:100%;
+	height:40px;
+	border-bottom:3px solid #A6D346;
+	margin-top:5px;
+} 
+.title_left{
+	float:left;
+	width:80px;
+	height:30px;
+	line-height:30px;
+	background:#A6D346;
+	text-align:left;
+	margin-top:13px;
+	padding-left:8px;
+	border-radius:5px;
+	color:#fff;
+	font-size:14px;
+	font-weight:bold;
+}
+/*表单*/
+.formTable{
+	width:98%;
+	border:1px solid #ccc;
+	padding:5px;
+	margin:2px;
+}
+.formTable form table{
+	background:#FFFFFF;
+}
+.formTable form table tr{
+	height:32px;
+	line-height:32px;
+	border-bottom:1px solid red;
+}
+/*表单表格标签样式*/
+.formTable form table tr .td_l{
+	text-align:right;
+	font-size:14px;
+}
+/*表单表格文本样式*/
+.formTable form table tr .td_t{
+	text-align:left;
+	font-size:14px;
+	padding-left:3px;
+}
+.listTable{
+	padding:3px;
+}
+
+/*修改jquery easyUi表格样式*/
+#tb{
+	margin-top:2px;
+	pading-top:8px;
+}
+.datagrid-header-row{
+	height:40px;			
+}
+.datagrid-header-row .datagrid-cell{
+	font-size:14px;
+	font-weight:blod;
+}
+.datagrid-row{
+	height:30px;
+}
+.datagrid-body .datagrid-btable{
+	font-size:12px;
+}
+.datagrid-row:nth-child(2n){
+    background:#EFEEEC;
+}
+/*文本框*/
+input[type=text]{
+	border:1px solid #ccc;
+	height:24px;
+	line-height:24px;
+}
+/*焦点文本框*/
+input[type=text]:focus{
+	border:1px solid #000;
+	height:24px;
+	line-height:24px;
+}
+/*下拉框*/
+select{
+	border:1px solid #ccc;
+	height:30px;
+}
+/*复选框*/
+input[type=checkbox]{
+	border:1px solid #ccc;
+}
+/*焦点复选框*/
+input[type=checkbox]:focus{
+	border:1px solid blue;
+}
+/*查询按钮*/
+.search_btn{
+	background:url(../images/btn_query.png) no-repeat;
+	border:0px;
+	width:80px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+	vertical-align:middle;
+}
+.search_btn:hover{
+	background:url(../images/btn_query_mouseover.png) no-repeat;
+}
+/*选择按钮*/
+.select_btn{
+	background:url(../images/btn_select.png) no-repeat;
+	border:0px;
+	width:80px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.select_btn:hover{
+	background:url(../images/btn_select_mouseover.png) no-repeat;
+}
+/*返回交按钮*/
+.close_btn{
+	background:url(../images/btn_close.png) no-repeat;
+	border:0px;
+	width:80px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.close_btn:hover{
+	background:url(../images/btn_close_mouseover.png) no-repeat;
+}
+/*添加按钮*/
+.add_btn{
+	background:url(../images/btn_add.png) no-repeat;
+	border:0px;
+	width:80px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.add_btn:hover{
+	background:url(../images/btn_add_mouseover.png) no-repeat;
+}
+/*编辑按钮*/
+.edit_btn{
+	background:url(../images/btn_edit.png) no-repeat;
+	border:0px;
+	width:80px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.edit_btn:hover{
+	background:url(../images/btn_edit_mouseover.png) no-repeat;
+}
+/*删除按钮*/
+.move_btn{
+	background:url(../images/btn_remove.png) no-repeat;
+	border:0px;
+	width:80px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.move_btn:hover{
+	background:url(../images/btn_remove_mouseover.png) no-repeat;
+}
+/*保存按钮*/
+.save_btn{
+	background:url(../images/btn_save.png) no-repeat;
+	border:0px;
+	width:80px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.save_btn:hover{
+	background:url(../images/btn_save_mouseover.png) no-repeat;
+}
+/*查看*/
+.view_btn{
+	background:url(../images/btn_view.png) no-repeat;
+	border:0px;
+	width:80px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.view_btn:hover{
+	background:url(../images/btn_view_mouseover.png) no-repeat;
+}
+/*启用*/
+.start_btn{
+	background:url(../images/btn_start.png) no-repeat;
+	border:0px;
+	width:80px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.start_btn:hover{
+	background:url(../images/btn_start_mouseover.png) no-repeat;
+}
+/*停用*/
+.stop_btn{
+	background:url(../images/btn_stop.png) no-repeat;
+	border:0px;
+	width:80px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.stop_btn:hover{
+	background:url(../images/btn_stop_mouseover.png) no-repeat;
+}
+/*返回按钮*/
+.return_btn{
+	background:url(../images/btn_return.png) no-repeat;
+	border:0px;
+	width:100px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.return_btn:hover{
+	background:url(../images/btn_return_mouseover.png) no-repeat;
+}
+/*返回列表按钮*/
+.returnlist_btn{
+	background:url(../images/btn_returnlist.png) no-repeat;
+	border:0px;
+	width:100px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.returnlist_btn:hover{
+	background:url(../images/btn_returnlist_mouseover.png) no-repeat;
+}
+/*上一步按钮*/
+.prev_btn{
+	background:url(../images/btn_prev.png) no-repeat;
+	border:0px;
+	width:80px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.prev_btn:hover{
+	background:url(../images/btn_prev_mouseover.png) no-repeat;
+}
+
+/*下一步按钮*/
+.next_btn{
+	background:url(../images/btn_next.png) no-repeat;
+	border:0px;
+	width:80px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-right:30px;
+}
+.next_btn:hover{
+	background:url(../images/btn_next_mouseover.png) no-repeat;
+}
+/*试运行*/
+.run_btn{
+	background:url(../images/btn_run.png) no-repeat;
+	border:0px;
+	width:80px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.run_btn:hover{
+	background:url(../images/btn_run_mouseover.png) no-repeat;
+}
+/*查看运行结果*/
+.result_btn{
+	background:url(../images/btn_result.png) no-repeat;
+	border:0px;
+	width:100px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.result_btn:hover{
+	background:url(../images/btn_result_mouseover.png) no-repeat;
+}
+/*一字*/
+.one_btn{
+	background:url(../images/button_all.png);
+	border:0px;
+	width:60px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	text-align:center;
+}
+.one_btn:hover{
+	background:url(../images/button_all_mouseover.png);
+	font-weight:blod;
+}
+/*两字*/
+.two_btn{
+	background:url(../images/button_all.png);
+	border:0px;
+	width:60px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	text-align:center;
+}
+.two_btn:hover{
+	background:url(../images/button_all_mouseover.png);
+	font-weight:blod;
+}
+/*四 字*/
+.four_btn{
+	background:url(../images/button_all.png);
+	border:0px;
+	width:80px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	text-align:center;
+}
+.four_btn:hover{
+	background:url(../images/button_all_mouseover.png);
+	font-weight:blod;
+}
+/*more*/
+.more_btn{
+	background:url(../images/button_all.png);
+	border:0px;
+	width:120px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	text-align:center;
+}
+.more_btn:hover{
+	background:url(../images/button_all_mouseover.png);
+	font-weight:blod;
+}
+/*调度设置按钮*/
+.set_btn{
+	background:url(../images/btn_set.png) no-repeat;
+	border:0px;
+	width:100px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.set_btn:hover{
+	background:url(../images/btn_set_mouseover.png) no-repeat;
+}
+/*取消调度设置按钮*/
+.clearset_btn{
+	background:url(../images/btn_delete.png) no-repeat;
+	border:0px;
+	width:100px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.clearset_btn:hover{
+	background:url(../images/btn_delete_mouseover.png) no-repeat;
+}
+/*立即运行*/
+.run4_btn{
+	background:url(../images/btn_run4.png) no-repeat;
+	border:0px;
+	width:100px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.run4_btn:hover{
+	background:url(../images/btn_run4_mouseover.png) no-repeat;
+}
+/*导出按钮*/
+.excel_btn{
+	background:url(../images/btn_excel.png) no-repeat;
+	border:0px;
+	width:100px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.excel_btn:hover{
+	background:url(../images/btn_excel_mouseover.png) no-repeat;
+}
+/*添加指标*/
+.add_target_btn{
+	background:url(../images/btn_add_target.png) no-repeat;
+	border:0px;
+	width:100px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.add_target_btn:hover{
+	background:url(../images/btn_add_target_mouseover.png) no-repeat;
+}
+/*删除指标*/
+.remove_target_btn{
+	background:url(../images/btn_remove_target.png) no-repeat;
+	border:0px;
+	width:100px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.remove_target_btn:hover{
+	background:url(../images/btn_remove_target_mouseover.png) no-repeat;
+}
+
+/*组合计算*/
+.btn_calcul{
+	background:url(../images/btn_calcul.png) no-repeat;
+	border:0px;
+	width:100px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.btn_calcul:hover{
+	background:url(../images/btn_calcul_mouseover.png) no-repeat;
+}
+/*纳入任务池*/
+.btn_inpool{
+	background:url(../images/btn_inpool.png) no-repeat;
+	border:0px;
+	width:100px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.btn_inpool:hover{
+	background:url(../images/btn_inpool_mouseover.png) no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------*/
+/*打印按钮*/
+.print_btn{
+	background:url(../images/button_dy.png) no-repeat;
+	border:0px;
+	width:68px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.print_btn:hover{
+	background:url(../images/button_dy_mouseover.png) no-repeat;
+}
+/*上报按钮*/
+.report_btn{
+	background:url(../images/button_shangbao.png) no-repeat;
+	border:0px;
+	width:68px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.report_btn:hover{
+	background:url(../images/button_shangbao_mouseover.png) no-repeat;
+}
+/*上传*/
+.upload_btn{
+	background:url(../images/button_dc.png) no-repeat;
+	border:0px;
+	width:68px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.upload_btn:hover{
+	background:url(../images/button_dc_mouseover.png) no-repeat;
+}
+/*下载*/
+.download_btn{
+	background:url(../images/button_dr.png) no-repeat;
+	border:0px;
+	width:68px;
+	height:30px;
+	cursor: pointer;
+	color:#fff;
+	padding-left:30px;
+}
+.download_btn:hover{
+	background:url(../images/button_dr_mouseover.png) no-repeat;
+}
+
+#tb div{
+	line-height:30px;
+}

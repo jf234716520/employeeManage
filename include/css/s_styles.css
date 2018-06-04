@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+ul,li,dt,dl,ol,dd{ display:block; margin:0px; padding:0px; list-style:none;}
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;};
+a:hover{text-decoration:underline; color:#FF0000;}
+
+body{
+	width:100%;
+	*width:auto;
+	height:100%;
+	*height:auto;
+	font-size-adjust:none;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:400;
+	font-family: 'Microsoft YaHei';
+	margin:0;
+	background:#F1F1F1;
+}
+/*主框架*/
+.main{
+	width:auto;
+	height:auto;
+	text-align:left;
+	background-color:white;
+	border:1px solid #8CB2E3;
+	*padding:1px;
+}
+/*页面标题*/
+.barTitle{ 
+	height:52px; 
+	border-left:0px;
+	border-top:0px;
+	border-right:0px;
+	border-bottom:#eee 2px solid;
+	text-align: left;
+	position:relative;
+}
+.barTitle .content {
+	font-family: 'Microsoft YaHei';
+	height: 50px;
+	line-height: 50px;
+	margin:0;
+	background: url(../images/formTitle.gif) no-repeat 20px center;
+	font-size:18px;
+	text-indent: 42px;
+}
+.barTitle .content span{
+	position: absolute;
+	left:0;
+	height:48px; 
+	color: #111 !important;
+	border-bottom: #3fc4b1 4px solid;
+	padding-right: 26px;
+}
+/*显示、隐藏按钮*/
+.barTitle .search{
+	float:right;
+	line-height:30px;
+	margin-top:10px;
+	padding-top:5px;
+	cursor:hand;
+}
+.toolBar{
+	background:#fff;
+	height:50px;
+	line-height:50px;
+}
+.toolBar .toolBar_l{
+	float:left;
+	margin-top:5px;
+}
+.toolBar .toolBar_r{
+	float:right;
+	margin-top:5px;
+	margin-right:5px;
+}
+/*页面分类标题*/
+.title{
+	width:100%;
+	height:40px;
+	border-bottom:3px solid #A6D346;
+	margin-top:5px;
+} 
+.title_left{
+	float:left;
+	width:80px;
+	height:30px;
+	line-height:30px;
+	background:#A6D346;
+	text-align:left;
+	margin-top:13px;
+	padding-left:8px;
+	border-radius:5px;
+	color:#fff;
+	font-size:14px;
+	font-weight:bold;
+}
+/*表单样式*/
+/*查询条件表单*/
+/*查询条件表单*/
+.searchTable{
+	width: 100%;
+	border-top: 1px solid #ccc;
+	border-bottom:: 1px solid #ccc;
+	padding: 3px 0px 3px 0px;
+	margin:0px;
+}
+.searchTable table{
+	background:#F1F1F1;
+}
+.searchTable table tr{
+	height:55px;
+	line-height:55px;
+}
+.searchTable table tr .td_l{
+	padding-right:10px;
+	text-align:right;
+	width:165px;
+	background:#F1F1F1;
+}
+.searchTable table tr .td_t{
+	padding-left:10px;
+	text-align:left;
+	width:165px;
+	background:#F1F1F1;
+}
+/*填报表单*/
+.formTable{
+	width:98%;
+	border:1px solid #ccc;
+	padding:5px;
+	margin:2px;
+}
+.formTable form table{
+	background:#FFFFFF;
+}
+.formTable form table tr{
+	height:32px;
+	line-height:32px;
+	border-bottom:1px solid red;
+}
+/*表单表格标签样式*/
+.formTable form table tr .td_l{
+	text-align:right;
+	font-size:14px;
+}
+/*表单表格文本样式*/
+.formTable form table tr .td_t{
+	text-align:left;
+	font-size:14px;
+	padding-left:3px;
+}
+.targetHead thead tr th{
+	color:red;
+	background:url(../images/thead_bg.jpg);color:#000;
+}
+.listTable{
+	padding:3px;
+}
+
+/*修改jquery easyUi表格样式*/
+#tb{
+	margin-top:2px;
+	pading-top:8px;
+}
+.datagrid-header-row{
+	height:40px;	
+	background:#1fbba6;
+}
+.datagrid-header-row .datagrid-cell{
+	font-family: 'Microsoft YaHei';
+	font-size:14px;
+	color:#ffffff;
+	font-weight:600;
+}
+.datagrid-cell-group{
+	font-family: 'Microsoft YaHei';
+	font-size:14px;
+	color:#ffffff;
+	font-weight:600;
+}
+.datagrid-row{
+	height:40px;
+}
+.datagrid-body .datagrid-btable{
+	font-family: 'Microsoft YaHei';
+	font-size:14px;
+	color:#333333;
+}
+.datagrid-row:nth-child(2n){
+    background:#EFEEEC;
+}
+/*按钮*/
+input[type=button]{
+	font-size:14px; 
+	font-family:'Microsoft YaHei';
+	font-weight: bold;
+}
+/*文本框*/
+input[type=text]{
+	border:1px solid #ccc;
+	vertical-align:middle;
+	width:165px;
+	height:32px;
+	line-height:32px;
+}
+/*焦点文本框*/
+input[type=text]:focus{
+	border:1px solid #000;
+}
+/*下拉框*/
+.selbox{
+	width:140px;
+	height:32px;
+	vertical-align: middle;	
+}
+
+/*复选框*/
+input[type=checkbox]{
+	border:1px solid #ccc;
+}
+/*焦点复选框*/
+input[type=checkbox]:focus{
+	border:1px solid blue;
+}
+
+#tb div{
+	line-height:30px;
+}
+.hidden{
+	display:none;
+}

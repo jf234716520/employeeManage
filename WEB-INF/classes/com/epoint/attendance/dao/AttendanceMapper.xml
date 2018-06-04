@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>    
+<!DOCTYPE mapper    
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.epoint.attendance.dao.AttendanceMapper">  
+
+    <select id="getAttendanceList" resultType="map" parameterType="string">
+    	select t1.*,case when t2.num is null then 0 else t2.num end as num from 
+    	attendance t1
+    	left join (select count(*) as num,tt.employee_uuid from (select * from attendance where islate = '1') tt group by employee_uuid) t2 
+    	on t1.employee_uuid = t2.employee_uuid 
+    	where t1.employee_uuid = #{uuid}
+    </select>
+    
+    <select id="getEmployeeByUUID" parameterType="string" resultType="map">
+    	select  * from employee_baseinfo where uuid = #{uuid} and password = #{password}
+    </select>
+    
+    <insert id="addAttendanceRecord" parameterType="map">
+    	insert into attendance (uuid,attendance_time,employee_uuid,islate) 
+    	values
+    	(#{recordUUID},#{time},#{employeeUUID},#{isLate})
+    </insert>
+    
+    <update id="reduceAward">
+    	update  employee_baseinfo set award = award-100 where uuid = #{uuid}
+    </update>
+</mapper> 

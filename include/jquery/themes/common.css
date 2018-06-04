@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+body{
+	margin-left: 0px;
+	margin-right: 0px; 
+	margin-top: 0px;
+}
+.big1btn{
+	font-size:20;
+	text-align:center;
+	width:220px;
+	height:80px;
+}
+.big2btn{
+	font-size:14;
+	text-align:center;
+	width:120px;
+	height:40px;
+}
+.big3btn{
+	font-size:16;
+	text-align:center;
+	width:280px;
+	height:70px;
+}
+
+.Tab{ border-collapse:collapse; width:100%;}
+.Tab td{ border-left:solid 1px #95B8E7;border-top:solid 1px #95B8E7;border-bottom:solid 1px #95B8E7}
+.Tab table td{ border:0;}

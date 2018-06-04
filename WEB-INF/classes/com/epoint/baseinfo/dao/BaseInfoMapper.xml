@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>    
+<!DOCTYPE mapper    
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.epoint.baseinfo.dao.BaseInfoMapper">  
+
+    <select id="getEmployeeList" resultType="map" parameterType="map">  
+        select t1.uuid,t1.name,t1.org_name,t2.name as station,base_salary,award,t3.name as sex,t1.birthday,t4.name as political,t1.password 
+        from employee_baseinfo t1 
+        left join directory t2 on t2.code = t1.station and t2.type = 'station'
+        left join directory t3 on t3.code = t1.sex and t3.type = 'sex'
+        left join directory t4 on t4.code = t1.political and t4.type = 'political'
+        where 1=1 
+        <if test="queryName != '' and queryName != null">
+        	and t1.name = #{queryName}
+        </if>
+        <if test="queryStation != '' and queryStation != null">
+        	and t2.name = #{queryStation}
+        </if>
+        order by t1.uuid
+    </select> 
+    
+    <select id="getAllEmployeeList" resultType="map">
+    	select t1.uuid,t1.name,t1.org_name,t2.name as station,base_salary,award,t3.name as sex,t1.birthday,t4.name as political from employee_baseinfo t1 
+        left join directory t2 on t2.code = t1.station and t2.type = 'station'
+        left join directory t3 on t3.code = t1.sex and t3.type = 'sex'
+        left join directory t4 on t4.code = t1.political and t4.type = 'political'
+    </select>
+    
+    <select id="getMaxUUID" resultType="int">
+    	select max(right(uuid,4)) as maxuuid from employee_baseinfo 
+    </select>
+    
+    <select id="getAllPolitical" resultType="map">
+    	select code,name from directory where type = 'political'
+    </select>
+    
+    <select id="getAllStation" resultType="map">
+    	select code,name from directory where type = 'station'
+    </select>
+    
+    <select id="getBaseSalary" resultType="map">
+    	select code,name from directory where type = 'base_salary' and code = #{code}
+    </select>
+    
+    <insert id="addEmployee" parameterType="map">
+    	insert employee_baseinfo (uuid,name,org_name,station,password,base_salary,award,sex,birthday,political)
+    	values
+    	(#{uuid},#{name},#{org_name},#{station},#{password},#{base_salary},0,#{sex},#{birthday},#{political})
+    </insert>
+    
+    <delete id="deleteEmployee" parameterType="string">
+    	delete from employee_baseinfo where uuid = #{uuid}
+    </delete>
+    
+    <select id="getEmployeeByUUID" parameterType="string" resultType="map">
+    	select t1.uuid,t1.name,t1.org_name,t2.name as station,base_salary,award,t3.name as sex,t1.birthday,t4.name as political,t1.password
+    	 from employee_baseinfo t1 
+        left join directory t2 on t2.code = t1.station and t2.type = 'station'
+        left join directory t3 on t3.code = t1.sex and t3.type = 'sex'
+        left join directory t4 on t4.code = t1.political and t4.type = 'political'
+        where uuid = #{uuid}
+    </select>
+    
+    <update id="updateEmployee" parameterType="map">
+    	update employee_baseinfo set password = #{password},name = #{name},sex = #{sex},birthday =#{birthday},political=#{political},station=#{station},org_name=#{org_name}
+    	where uuid = #{uuid}
+    </update>
+    
+    <select id="getAllName" resultType="map">
+    	select uuid,name from employee_baseinfo
+    </select>
+</mapper> 
